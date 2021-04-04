@@ -240,41 +240,41 @@
     <form class="request-form" action="#" method="get">
 
       <div class="request-form__for">
-        <label for="me" class="request-form__for-item">
-          <input checked type="radio" name="for-me" value="Хочу ёжика для себя">
+        <label for="self" class="request-form__for-item">
+          <input checked type="radio" name="for-me1" id="self" value="Хочу ёжика для себя">
           <span class="request-form__for-select">Хочу ёжика для себя</span>
         </label>
       </div>
 
       <div class="request-form__for">
         <label for="children" class="request-form__for-item">
-          <input type="radio" name="for-me" value="children">
+          <input type="radio" name="for-me2" id="children" value="Хочу ёжика для детей">
           <span class="request-form__for-select">Хочу ёжика для детей</span>
         </label>
       </div>
 
       <div class="request-form__for">
         <label for="breed" class="request-form__for-item">
-          <input type="radio" name="for-me" value="Хочу ёжика для разведения">
+          <input type="radio" name="for-me3" id="breed" value="Хочу ёжика для разведения">
           <span class="request-form__for-select">Хочу ёжика для разведения</span>
         </label>
       </div>
 
       <div class="request-form__hedgehog-count">
         <p>
-          <input checked type="radio" name="hedgehog-count" value="Мне нужны 3-4 ёжика">
+          <input type="radio" name="hedgehog-count1" id="hedgehog-count1" value="Мне нужен 1-2 ёжика">
+          <span>Мне нужен 1-2 ёжика</span>
+        </p>
+        <p>
+          <input checked type="radio" name="hedgehog-count2" id="hedgehog-count2" value="Мне нужны 3-4 ёжика">
           <span>Мне нужны 3-4 ёжика</span>
         </p>
         <p>
-          <input type="radio" name="hedgehog-count" value="Мне нужны 3 и более ёжиков">
+          <input type="radio" name="hedgehog-count3" id="hedgehog-count3" value="Мне нужны 3 и более ёжиков">
           <span>Мне нужны 3 и более ёжиков</span></p>
         <p>
-          <input type="radio" name="hedgehog-count" value="Пока присматриваюсь">
+          <input type="radio" id="hedgehog-count4" name="hedgehog-count4" value="Пока присматриваюсь">
           <span>Пока присматриваюсь</span>
-        </p>
-        <p>
-          <input type="radio" name="hedgehog-count" value="Мне нужен 1-2 ёжика">
-          <span>Мне нужен 1-2 ёжика</span>
         </p>
       </div>
 
@@ -287,7 +287,6 @@
       </div>
 
     </form>
-  </div>
   </div>
 </section>
 
@@ -353,10 +352,12 @@
         <a class="footer-phone" href="tel:79655698998">+7 (965) 569-89-98</a>
 
       </div>
-      <div class="footer-copyright">
-        <p>Все права защищены.
-          Указанная стоимость товаров и условия их приобретения действительны на текущую дату.</p>
-      </div>
+        <div class="footer-copyright">
+          <p>
+            Все права защищены.
+            Указанная стоимость товаров и условия их приобретения действительны на текущую дату.
+          </p>
+        </div>
     </div>
   </div>
 </footer>
