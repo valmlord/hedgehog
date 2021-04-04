@@ -21,9 +21,12 @@
   <title>Hedgehog</title>
 </head>
 
+<!-- HEADER -->
+
 <header class="header">
   <div class="container">
     <div class="header-menu">
+
       <div class="header-menu__hamburger">
         <span></span>
         <span></span>
@@ -70,9 +73,10 @@
     </div>
 
     <div class="header-promo">
+
       <h1 class="header-promo__title">
-        <svg class="name">
-          <use xlink:href="#name"></use>
+        <svg class="name-icon">
+          <use xlink:href="#name-icon"></use>
         </svg>
         <br>
         <span class="header-promo__title-transperent">
@@ -85,7 +89,6 @@
       </h2>
 
       <button class="btn btn-promo">Купить ёжика</button>
-
     </div>
 
   </div>
@@ -136,6 +139,7 @@
           Каждому ёжику мы <br>дарим много внимания
         </p>
       </div>
+
     </div>
   </div>
 </section>
@@ -176,7 +180,7 @@
             <span class="new-price">1 500 ₽</span>
           </p>
         </div>
-        <button class="btn btn-order" src="#">
+        <button class="btn btn-order">
           <svg class="plus">
             <use xlink:href="#plus"></use>
           </svg>
@@ -215,7 +219,7 @@
             <span class="new-price">2 500 ₽</span>
           </p>
         </div>
-        <button class="btn btn-order" src="#">
+        <button class="btn btn-order">
           <svg class="plus">
             <use xlink:href="#plus"></use>
           </svg>
@@ -226,6 +230,8 @@
   </div>
 </section>
 
+<!-- REQUEST -->
+
 <section class="request">
   <div class="container">
     <h5 class="request-title">
@@ -235,32 +241,41 @@
 
       <div class="request-form__for">
         <label for="me" class="request-form__for-item">
-          <input checked type="radio" name="for" value="Хочу ёжика для себя">
+          <input checked type="radio" name="for-me" value="Хочу ёжика для себя">
           <span class="request-form__for-select">Хочу ёжика для себя</span>
         </label>
       </div>
 
       <div class="request-form__for">
         <label for="children" class="request-form__for-item">
-          <input type="radio" name="for" value="children">
+          <input type="radio" name="for-me" value="children">
           <span class="request-form__for-select">Хочу ёжика для детей</span>
         </label>
       </div>
 
       <div class="request-form__for">
         <label for="breed" class="request-form__for-item">
-          <input type="radio" name="for" value="Хочу ёжика для разведения">
+          <input type="radio" name="for-me" value="Хочу ёжика для разведения">
           <span class="request-form__for-select">Хочу ёжика для разведения</span>
         </label>
       </div>
 
       <div class="request-form__hedgehog-count">
-        <p><input checked type="radio" name="hedgehog-count" value="Мне нужны 3-4 ёжика"><span>Мне нужны 3-4
-            ёжика</span></p>
-        <p><input type="radio" name="hedgehog-count" value="Мне нужны 3 и более ёжиков"><span>Мне нужны 3 и более
-            ёжиков</span></p>
-        <p><input type="radio" name="hedgehog-count" value="Пока присматриваюсь"><span>Пока присматриваюсь</span></p>
-        <p><input type="radio" name="hedgehog-count" value="Мне нужен 1-2 ёжика"><span>Мне нужен 1-2 ёжика</span></p>
+        <p>
+          <input checked type="radio" name="hedgehog-count" value="Мне нужны 3-4 ёжика">
+          <span>Мне нужны 3-4 ёжика</span>
+        </p>
+        <p>
+          <input type="radio" name="hedgehog-count" value="Мне нужны 3 и более ёжиков">
+          <span>Мне нужны 3 и более ёжиков</span></p>
+        <p>
+          <input type="radio" name="hedgehog-count" value="Пока присматриваюсь">
+          <span>Пока присматриваюсь</span>
+        </p>
+        <p>
+          <input type="radio" name="hedgehog-count" value="Мне нужен 1-2 ёжика">
+          <span>Мне нужен 1-2 ёжика</span>
+        </p>
       </div>
 
       <div class="request-form__contact-details">
@@ -270,12 +285,15 @@
         <input type="text" name="usercomment" placeholder="Комментарий к заявке">
         <button class="btn btn-submit" type="submit">Купить ёжика</button>
       </div>
+
     </form>
   </div>
   </div>
 </section>
 
-<section class="remaider">
+<!-- REMINDER -->
+
+<section class="reminder">
   <div class="container">
     <div class="reminder-info">
       <svg class="hedgehog">
@@ -288,11 +306,13 @@
   </div>
 </section>
 
+<!-- FOOTER -->
+
 <footer class="footer">
   <div class="container">
     <div class="footer-inner">
       <div class="footer-links">
-        
+
         <a href="javascript:void(0)" class="footer-logo">
           <svg class="footer-logo__img">
             <use xlink:href="#logo-icon"></use>
@@ -318,28 +338,31 @@
 
         <div class="footer-social">
           <div class="footer-social__links">
-          <svg class="footer-social__link">
-            <use xlink:href="#instagram-icon"></use>
-          </svg>
-          <svg class="footer-social__link">
-            <use xlink:href="#facebook-icon"></use>
-          </svg>
-          <svg class="footer-social__link">
-            <use xlink:href="#twitter-icon"></use>
-          </svg>
-        </div>
+            <svg class="footer-social__link">
+              <use xlink:href="#instagram-icon"></use>
+            </svg>
+            <svg class="footer-social__link">
+              <use xlink:href="#facebook-icon"></use>
+            </svg>
+            <svg class="footer-social__link">
+              <use xlink:href="#twitter-icon"></use>
+            </svg>
+          </div>
         </div>
 
         <a class="footer-phone" href="tel:79655698998">+7 (965) 569-89-98</a>
 
       </div>
-      <div class="footer-info">
+      <div class="footer-copyright">
         <p>Все права защищены.
           Указанная стоимость товаров и условия их приобретения действительны на текущую дату.</p>
       </div>
     </div>
   </div>
 </footer>
+
+
+<!-- SVG SPRITES -->
 
 <svg display="none">
   <symbol id="phone-icon" viewBox="0 0 13 11">
@@ -490,7 +513,6 @@
   integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
   crossorigin="anonymous"></script>
 <script src="script.js"></script>
-
 
 </body>
 

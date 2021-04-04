@@ -4,7 +4,6 @@ window.addEventListener("DOMContentLoaded", () => {
   
   $('.products-cards').slick({
     variableWidth: true,
-    infinite:false,
     slidesToShow: 1,
     slideToScroll: 2,
     arrows : false,
@@ -16,7 +15,7 @@ window.addEventListener("DOMContentLoaded", () => {
     }, ]
   });
 
-}); 
+
 
 // HAMBURGER
 
@@ -36,6 +35,6 @@ window.addEventListener("DOMContentLoaded", () => {
         });
     });
 
- 
+}); 
 
 

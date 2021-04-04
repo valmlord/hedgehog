@@ -1,6 +1,6 @@
 .advantages {
   background-color: white;
-/*   &:before {
+  /*   &:before {
     content: url('../img/shadow.svg');
     position: absolute;
     top: -200px;
@@ -25,7 +25,7 @@
     display: flex;
     flex-direction: column;
     flex-basis: 50%;
-    color: $dark-grey;
+    fill: $dirty-grey;
 
     &:nth-child(1) {
       flex-basis: 100%;
@@ -48,6 +48,7 @@
 
       &--hedgehog {
         background-color: $beidge;
+
         .hedgehog {
           width: 62px;
           display: block;
@@ -71,6 +72,7 @@
 
       &--hearth {
         background-color: $dirty-grey;
+
         .hearth {
           width: 32px;
           display: block;
