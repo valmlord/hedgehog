@@ -1,0 +1,90 @@
+.footer {
+    padding: 35px 0;
+    background-color: $dark-grey;
+
+    &-inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-links {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &-logo {
+        flex-basis: 100%;
+
+        &__img {
+            width: 120px;
+            height: 56px;
+            fill: white;
+        }
+    }
+
+    &-menu {
+        display: flex;
+        flex-direction: column;
+
+        &__nav {
+            display: flex;
+            margin-top: 60px;
+            flex-basis: 89%;
+        }
+
+        &__list {
+
+            &-item {
+                font-family: 'Cormorant Infant', serif;
+                font-size: 18px;
+                text-transform: uppercase;
+                font-weight: 700;
+                padding: 10px 0;
+                color: white;
+
+                &:last-child {
+                    margin-bottom: 52px;
+                }
+            }
+
+            &-link {
+                font-family: 'Cormorant Infant';
+                color: white;
+            }
+        }
+    }
+
+    &-phone {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        text-transform: uppercase;
+        color: white;
+        font-feature-settings: 'tnum'on, 'lnum'on;
+    }
+
+    &-social {
+        &__links {
+            display: flex;
+            flex-direction: column;
+            top: -60px;
+            flex-basis: 10%;
+        }
+
+        &__link {
+            fill: white;
+            width: 30px;
+            height: 30px;
+            margin-bottom: 22px;
+        }
+    }
+
+    &-info {
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        color: #FFFFFF;
+        margin-top: 34px;
+    }
+}

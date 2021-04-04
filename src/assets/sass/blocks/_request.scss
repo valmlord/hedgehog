@@ -1,0 +1,103 @@
+.request {
+    background-color: $grey;
+    &-title {
+        padding-top: 41px;
+        font-family: 'Cormorant Infant', serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        color: $dark-grey;
+    }
+    &-form {
+        display: flex;
+        flex-direction: column;
+        padding: 25px 0;
+        &__for {
+            &-item {
+                margin-top: 16px;
+                &:nth-child(2) {
+                    margin: 20px 0;
+                }
+            }
+            &-select {
+                border: 2px solid $dark-grey;
+                padding: 16px 22px;
+                border-radius: 40px;
+                border: 2px solid $dark-grey;
+                background-color: white ;
+                font-family: 'Cormorant Infant', serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 70px;
+            }
+        }
+        &__hedgehog-count {
+            margin-top: 30px;
+            input[type='radio']:after {
+                width: 14px;
+                height: 14px;
+                border-radius: 15px;
+                top: -2px;
+                left: -1px;
+                position: relative;
+                background-color: white;
+                content: '';
+                display: inline-block;
+                visibility: visible;
+                border: 1px solid $dirty-grey;
+            }
+        
+            input[type='radio']:checked:after {
+                width: 14px;
+                height: 14px;
+                border-radius: 15px;
+                top: -2px;
+                left: -1px;
+                position: relative;
+                background-color: white;
+                content: '';
+                display: inline-block;
+                visibility: visible;
+                border: 1px solid $dirty-grey;
+            }
+        }
+        &__contact-details {
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+
+            input {
+                height: 62px;
+                border-radius: 8px;
+                border: 1px solid $dirty-grey;
+                outline: none;
+                margin-bottom: 10px;
+                font-family: 'Raleway', sans-serif;
+                color: $dark-grey;
+                padding-left: 21px;
+                font-size: 14px;
+            }
+        }
+    }
+
+}
+
+section.request .container form  div label{
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+section.request .container form.request-form div.request-form__hedgehog-count p span {
+    font-family: 'Cormorant Infant', serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: $dark-grey;
+    margin-top: 25px;
+    padding-left: 7px;
+}
+
+section.request .container form  div label input[type="radio"]{
+    display: none;
+}

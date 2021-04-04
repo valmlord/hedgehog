@@ -1,0 +1,43 @@
+.reminder {
+    background-color: #E5E5E5;
+
+    &-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .hedgehog {
+            width: 34px;
+            height: 30px;
+            margin-top: 62px;
+        }
+    }
+
+    &-title {
+        font-size: 24px;
+        font-family: 'Cormorant Infant', serif;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    &-count {
+        font-size: 24px;
+        font-family: 'Cormorant Infant', serif;
+        font-style: normal;
+        font-weight: 700;
+        text-decoration: underline;
+        color: $dark-grey;
+    }
+
+    &-descr {
+        margin-top: 27px;
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        font-feature-settings: 'pnum'on, 'lnum'on;
+        color: #195557;
+        padding-bottom: 50px;
+    }
+}

@@ -1,0 +1,99 @@
+.advantages {
+  background-color: white;
+/*   &:before {
+    content: url('../img/shadow.svg');
+    position: absolute;
+    top: -200px;
+    z-index: 1;
+    width: 100%;
+  } */
+
+  &:after {
+    content: url("../img/hedgehog-1.png");
+    position: absolute;
+    top: -110px;
+    right: 0;
+    z-index: 3;
+  }
+
+  &-items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    color: $dark-grey;
+
+    &:nth-child(1) {
+      flex-basis: 100%;
+      top: -65px;
+    }
+
+    &:nth-child(2) {
+      top: -30px;
+    }
+
+    &:nth-child(3) {
+      top: -30px;
+    }
+
+    &__icon {
+      width: 92px;
+      height: 92px;
+      box-shadow: 4px 4px 20px #C2CCCA, -8px -8px 20px #FFFFFF;
+      border-radius: 50%;
+
+      &--hedgehog {
+        background-color: $beidge;
+        .hedgehog {
+          width: 62px;
+          display: block;
+          margin: -30px auto;
+        }
+      }
+
+      &--syringe {
+        background-color: $mint;
+
+        .syringe {
+          width: 32px;
+          display: block;
+          margin: -30px auto;
+        }
+
+        .advantages-item__description {
+          margin-top: 18px;
+        }
+      }
+
+      &--hearth {
+        background-color: $dirty-grey;
+        .hearth {
+          width: 32px;
+          display: block;
+          margin: -30px auto;
+        }
+      }
+    }
+
+    &__title {
+      font-family: 'Cormorant Infant', serif;
+      margin-top: 18px;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 17px;
+      text-transform: uppercase;
+    }
+
+    &__description {
+      margin-top: 10px;
+      font-family: 'Raleway', serif;
+      font-weight: normal;
+      font-size: 10px;
+      min-width: 125px;
+    }
+  }
+}

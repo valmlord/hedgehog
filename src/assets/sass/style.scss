@@ -1,0 +1,46 @@
+@import "base/variables";
+@import "libs/fonts";
+@import "libs/slick";
+@import "blocks/header";
+@import "media/header_media";
+@import "blocks/buttons";
+@import "media/buttons_media";
+@import "blocks/advantages";
+@import "media/advantages_media";
+@import "blocks/products";
+@import "media/products_media";
+@import "blocks/request";
+@import "media/request_media";
+@import "blocks/reminder";
+@import "media/reminder_media";
+@import "blocks/footer";
+@import "media/footer_media";
+
+
+
+* {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+  
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    a {
+      text-decoration: none;
+    }
+  
+    body {
+      min-width: 320px;
+      overflow-x: hidden;
+    }
+  }
+  
+  .container {
+    padding: 0 15px;
+  }
