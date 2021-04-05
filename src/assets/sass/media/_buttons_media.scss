@@ -40,3 +40,10 @@
         }
     }
 }
+
+@media (min-width: 425px ) {
+    .btn {
+        &-promo {
+            width: 328px;
+        }
+    }}
