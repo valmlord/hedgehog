@@ -1,0 +1,42 @@
+@media (min-width: 425px ) {
+    .btn {
+        &-promo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            margin-top: 41px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    
+        &-order {
+            position: absolute;
+            border: none;
+            bottom: 0;
+            right: 0;
+            box-shadow: none;
+    
+            .plus {
+                width: 20px;
+                height: 20px;
+                z-index: 2;
+            }
+        }
+        &-submit {
+            margin-top: 15px;
+            height: 62px;
+            border-radius: 40px;
+            background-color: $dark-grey;
+            color: white;
+            font-weight: 700;
+            font-size: 14px;
+            border: none;
+            outline: none;
+        }
+    
+        &:hover {
+            background: linear-gradient(90.14deg, #B0D3CE -2.41%, #FFEDCE 99.79%);
+        }
+    }
+}

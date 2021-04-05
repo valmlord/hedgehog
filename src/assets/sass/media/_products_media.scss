@@ -1,8 +1,8 @@
 @media (min-width: 375px) {
     .products {
         padding-left: 0px;
+
         &-card {
-    
             &__header {
                 &-sale {
                     .sale-icon {
@@ -19,6 +19,7 @@
                         z-index: 20;
                     }
                 }
+
                 &-info {
                     .info-item {
                         font-size: 14px;
@@ -32,7 +33,7 @@
                             margin-right: 5px;
                             margin-left: 20px;
                         }
-    
+
                         .syringe {
                             width: 15px;
                             height: 15px;
@@ -43,23 +44,19 @@
             }
 
             &__description {
-    
                 &-name {
                     font-size: 32px;
-    
                 }
-    
+
                 &-text {
                     font-size: 13px;
-    
                 }
-    
+
                 &-price {
-    
                     .old-price {
                         font-size: 22px;
                     }
-                    
+
                     .new-price {
                         font-size: 42px;
                     }
@@ -70,6 +67,144 @@
 
     .slick-slide {
         width: 330px;
+        padding-right: 40px;
+        position: relative;
+    }
+}
+
+@media (min-width: 425px) {
+    .products {
+        &-card {
+            min-height: 397px;
+
+            &__header {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+
+                &-sale {
+                    .sale-icon {
+                        position: absolute;
+                        top: -15px;
+                        right: 107px;
+                        font-size: 14px;
+                        padding: 8px 9px 10px 11px;
+                    }
+                }
+
+                &-info {
+                    .info-item {
+                        .hearth {
+                            width: 25px;
+                            height: 25px;
+                        }
+
+                        .syringe {
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+                }
+            }
+
+            &__description {
+                &-name {
+                    margin-top: 30px;
+                    font-size: 34px;
+                }
+
+                &-text {
+                    margin-top: 15px;
+                    font-size: 15px;
+                }
+
+                &-price {
+                    .old-price {
+                        font-size: 24px;
+                        line-height: 50px;
+                    }
+
+                    .new-price {
+                        font-size: 44px;
+                        line-height: 54px;
+                    }
+                }
+            }
+        }
+    }
+
+    .slick-slide {
+        width: 390px;
+        padding-right: 40px;
+        position: relative;
+    }
+}
+
+@media (min-width: 1180px) {
+    .products {
+        &-card {
+            min-height: 397px;
+
+            &__header {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+
+                &-sale {
+                    .sale-icon {
+                        position: absolute;
+                        top: -15px;
+                        right: 107px;
+                        font-size: 14px;
+                        padding: 8px 9px 10px 11px;
+                    }
+                }
+
+                &-info {
+                    .info-item {
+                        .hearth {
+                            width: 25px;
+                            height: 25px;
+                        }
+
+                        .syringe {
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+                }
+            }
+
+            &__description {
+                &-name {
+                    margin-top: 30px;
+                    font-size: 34px;
+                }
+
+                &-text {
+                    margin-top: 15px;
+                    font-size: 15px;
+                }
+
+                &-price {
+                    .old-price {
+                        font-size: 20px;
+                        line-height: 24px;
+                        font-weight: 700;
+                    }
+
+                    .new-price {
+                        font-size: 40px;
+                        line-height: 48px;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+
+    .slick-slide {
+        width: 570px;
         padding-right: 40px;
         position: relative;
     }

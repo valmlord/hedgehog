@@ -22,3 +22,26 @@
     
     }
 }
+
+@media (min-width: 425px) {
+    .request {
+        &-title {
+            font-size: 34px;
+        }
+        &-form {
+            &__for {
+                &-select {
+                    padding: 30px 30px; 
+                    font-size: 20px;
+                    line-height: 100px;
+                }
+            }
+            &__contact-details {
+                input {
+                    font-size: 18px;
+                }
+            }
+        }
+    
+    }
+}
