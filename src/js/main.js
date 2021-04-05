@@ -1,27 +1,10 @@
-
-window.addEventListener("DOMContentLoaded", () => {
-  "use strict";
-  
-  $('.products-cards').slick({
-    variableWidth: true,
-    slidesToShow: 1,
-    slideToScroll: 2,
-    arrows : false,
-    responsive: [{
-        breakpoint: 768,
-        settings: {
-            arrows : false
-        }
-    }, ]
-  });
-
-
+import "./modules/slider";
 
 // HAMBURGER
 
-    const menu = document.querySelector(".header-menu__nav"),
-        menuItem = document.querySelectorAll(".header-menu__list-link"),
-        hamburger = document.querySelector(".header-menu__hamburger");
+const menu = document.querySelector(".header-menu__nav"),
+    menuItem = document.querySelectorAll(".header-menu__list-link"),
+    hamburger = document.querySelector(".header-menu__hamburger");
 
     hamburger.addEventListener("click", () => {
         hamburger.classList.toggle("header-menu__hamburger--active"),
@@ -35,6 +18,4 @@ window.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-}); 
-
-
+console.log(1);

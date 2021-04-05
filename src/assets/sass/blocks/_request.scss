@@ -35,7 +35,7 @@
         }
         &__hedgehog-count {
             margin-top: 30px;
-            input[type='radio']:after {
+             input[type='radio']:after {
                 width: 14px;
                 height: 14px;
                 border-radius: 15px;
@@ -61,7 +61,7 @@
                 display: inline-block;
                 visibility: visible;
                 border: 1px solid $dirty-grey;
-            }
+            } 
         }
         &__contact-details {
             display: flex;
@@ -84,20 +84,84 @@
 
 }
 
-section.request .container form  div label{
-    cursor: pointer;
-    margin-top: 50px;
-}
+// CHECKBOX STYLES
 
-section.request .container form.request-form div.request-form__hedgehog-count p span {
-    font-family: 'Cormorant Infant', serif;
-    font-weight: 700;
-    font-size: 14px;
-    color: $dark-grey;
-    margin-top: 25px;
-    padding-left: 7px;
-}
+// section.request .container form.request-form div.request-form__hedgehog-count p span {
+//     font-family: 'Cormorant Infant', serif;
+//     font-weight: 700;
+//     font-size: 14px;
+//     color: $dark-grey;
+//     margin-top: 25px;
+//     padding-left: 7px;
+// }
 
-section.request .container form  div label input[type="radio"]{
-    display: none;
-}
+// section.request .container form  div label{
+//     cursor: pointer;
+//     margin-top: 50px;
+// }
+
+// section.request .container form  div label input[type="radio"]{
+//     display: none;
+// }
+
+// section.request .container form div label input[type="radio"]:checked 
+// ~ span
+// {
+//     background-color: $dark-grey;
+//     color: white;
+//     transition: 0.3s ease-in-out;
+// }
+
+// /* для элемента input c type="radio" */
+// section.request .container form request-form div.request-form__hedgehod-count p input {
+//     position: absolute;
+//     z-index: -1;
+//     opacity: 0;
+//   }
+//   /* для элемента label связанного с .custom-radio */
+//   section.request .container form request-form div.request-form__hedgehod-count p input+label {
+//     display: inline-flex;
+//     align-items: center;
+//     user-select: none;
+//   }
+//   /* создание в label псевдоэлемента  before со следующими стилями */
+//   section.request .container form request-form div.request-form__hedgehod-count p input+label::before {
+//     content: '';
+//     display: inline-block;
+//     width: 1em;
+//     height: 1em;
+//     flex-shrink: 0;
+//     flex-grow: 0;
+//     border: 1px solid #adb5bd;
+//     border-radius: 50%;
+//     margin-right: 0.5em;
+//     background-repeat: no-repeat;
+//     background-position: center center;
+//     background-size: 50% 50%;
+//   }
+//   /* стили при наведении курсора на радио */
+//   section.request .container form request-form div.request-form__hedgehod-count p input:not(:disabled):not(:checked)+label:hover::before {
+//     border-color: $dark-grey;
+//   }
+//   /* стили для активной радиокнопки (при нажатии на неё) */
+//   section.request .container form request-form div.request-form__hedgehod-count p input:not(:disabled):active+label::before {
+//     background-color: #b3d7ff;
+//     border-color: #b3d7ff;
+//   }
+//   /* стили для радиокнопки, находящейся в фокусе */
+//   section.request .container form request-form div.request-form__hedgehod-count p input:focus+label::before {
+//     box-shadow: 0 0 0 0.2rem $dirty-grey;
+//   }
+//   /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+//   section.request .container form request-form div.request-form__hedgehod-count p input:focus:not(:checked)+label::before {
+//     border-color: $dirty-grey;
+//   }
+//   /* стили для радиокнопки, находящейся в состоянии checked */
+//   section.request .container form request-form div.request-form__hedgehod-count p input:checked+label::before {
+//     border-color: $dirty-grey;
+//     background-color: $dirty-grey;
+//   }
+//   /* стили для радиокнопки, находящейся в состоянии disabled */
+//   section.request .container form request-form div.request-form__hedgehod-count p input:disabled+label::before {
+//     background-color: #e9ecef;
+//   }

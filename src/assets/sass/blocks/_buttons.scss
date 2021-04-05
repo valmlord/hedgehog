@@ -15,9 +15,6 @@
         color: white;
         font-family: 'Raleway', sans-serif;
         transition: 0.5s all;
-        &:hover {
-            background: linear-gradient(90.14deg, #B0D3CE -2.41%, #FFEDCE 99.79%);
-        }
     }
 
     &-order {
@@ -43,5 +40,9 @@
         font-size: 14px;
         border: none;
         outline: none;
+    }
+
+    &:hover {
+        background: linear-gradient(90.14deg, #B0D3CE -2.41%, #FFEDCE 99.79%);
     }
 }

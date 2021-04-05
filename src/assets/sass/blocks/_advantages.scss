@@ -1,13 +1,8 @@
 .advantages {
-  background-color: white;
-  /*   &:before {
-    content: url('../img/shadow.svg');
-    position: absolute;
-    top: -200px;
+    background-color: white;
+    background: url('../img/shadow.svg') 0 0/100% auto no-repeat;
     z-index: 1;
-    width: 100%;
-  } */
-
+  
   &:after {
     content: url("../img/hedgehog-1.png");
     position: absolute;
