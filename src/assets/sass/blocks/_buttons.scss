@@ -2,19 +2,23 @@
     box-shadow: 4px 4px 20px #C2CCCA, -8px -8px 20px #FFFFFF;
     outline: none;
     cursor: pointer;
+    transition: 0.6s ease-in-out;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
 
     &-promo {
         margin-top: 21px;
         width: 100%;
         height: 59px;
         border-radius: 40px;
-        border: none;
         background-color: $dirty-grey;
-        font-size: 14px;
-        font-weight: bold;
         color: white;
         font-family: 'Raleway', sans-serif;
-        transition: 0.5s all;
+
+        &:hover {
+            background: linear-gradient(90.14deg, #B0D3CE -2.41%, #FFEDCE 99.79%);
+        }
     }
 
     &-order {
@@ -30,19 +34,16 @@
             z-index: 2;
         }
     }
+
     &-submit {
         margin-top: 15px;
         height: 62px;
         border-radius: 40px;
         background-color: $dark-grey;
         color: white;
-        font-weight: 700;
-        font-size: 14px;
-        border: none;
-        outline: none;
-    }
 
-    &:hover {
-        background: linear-gradient(90.14deg, #B0D3CE -2.41%, #FFEDCE 99.79%);
+        &:hover {
+            background: linear-gradient(90.14deg, #B0D3CE -2.41%, #FFEDCE 99.79%);
+        }
     }
 }

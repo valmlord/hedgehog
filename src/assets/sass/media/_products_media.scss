@@ -86,7 +86,7 @@
                     .sale-icon {
                         position: absolute;
                         top: -15px;
-                        right: 107px;
+                        right: 57px;
                         font-size: 14px;
                         padding: 8px 9px 10px 11px;
                     }
@@ -134,7 +134,6 @@
     }
 
     .slick-slide {
-        width: 390px;
         padding-right: 40px;
         position: relative;
     }
@@ -143,7 +142,7 @@
 @media (min-width: 1180px) {
     .products {
         &-card {
-            min-height: 397px;
+            min-height: 357px;
 
             &__header {
                 display: flex;
@@ -204,7 +203,7 @@
     }
 
     .slick-slide {
-        width: 570px;
+        width: 540px;
         padding-right: 40px;
         position: relative;
     }

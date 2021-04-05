@@ -6,13 +6,6 @@
             font-size: 26px;
         }
         &-form {
-            &__for {
-                &-select {
-                    padding: 20px 26px; 
-                   font-size: 16px;
-                    line-height: 80px;
-                }
-            }
             &__contact-details {
                 input {
                     font-size: 16px;
@@ -29,12 +22,25 @@
             font-size: 34px;
         }
         &-form {
-            &__for {
-                &-select {
-                    padding: 30px 30px; 
-                    font-size: 20px;
-                    line-height: 100px;
+            &__contact-details {
+                input {
+                    font-size: 18px;
                 }
+            }
+        }
+    
+    }
+}
+
+@media (min-width: 768px) {
+    .request {
+        &-form {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            &__for {
+                display: flex;
+                flex-direction: column;
             }
             &__contact-details {
                 input {

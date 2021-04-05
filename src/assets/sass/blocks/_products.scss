@@ -1,5 +1,6 @@
 .products {
     padding-left: 15px;
+
     &-cards {
         margin-top: 30px;
     }
@@ -8,20 +9,22 @@
         margin-bottom: 50px;
         min-height: 318px;
         border-radius: 20px 20px 0 20px;
+
         &:after {
-            content: ''; 
-            position: absolute; 
+            content: '';
+            position: absolute;
             bottom: 0;
             right: 0;
-            border: 30px solid transparent; 
+            border: 30px solid transparent;
             border-right: 30px solid white;
             border-bottom: 30px solid white;
             box-shadow: none;
             z-index: 1;
-           }
+        }
 
         &--first {
             background-color: $beidge;
+
             &:before {
                 content: url("../img/hedgehog-2.png");
                 position: absolute;
@@ -32,6 +35,7 @@
 
         &--second {
             background-color: $mint;
+
             &:before {
                 content: url("../img/hedgehog-3.png");
                 position: absolute;
@@ -89,6 +93,10 @@
             }
         }
 
+        &__nav {
+            position: relative;
+        }
+
         &__description {
             padding-left: 29px;
             padding-right: 99px;
@@ -115,7 +123,7 @@
                 margin-top: 5px;
 
                 .old-price {
-                    font-family:'Cormorant Infant', serif;
+                    font-family: 'Cormorant Infant', serif;
                     font-style: normal;
                     font-weight: bold;
                     font-size: 20px;
@@ -123,7 +131,7 @@
                     text-decoration-line: line-through;
                     color: #C2CCCA;
                 }
-                
+
                 .new-price {
                     font-family: 'Cormorant Infant', serif;
                     font-style: normal;
@@ -141,4 +149,35 @@
     width: 290px;
     padding-right: 40px;
     position: relative;
+}
+
+.prev,
+.next {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    &-slide {
+        background: none;
+        border: none;
+        box-shadow: none;
+        fill: $dark-grey;
+        outline: none;
+
+        &:hover {
+            background: none;
+        }
+    }
+}
+.prev-slide {
+    position: absolute;
+    top: 50%;
+    left: -35px;
+}
+
+.next-slide {
+    position: absolute;
+    top: 50%;
+    right: -35px;
 }

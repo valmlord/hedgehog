@@ -108,18 +108,30 @@
 
 @media (min-width: 768px) {
     .header {
+        &:after {
+            display: none;
+        }
+
         &:before {
-            content: url('../img/hedgehog-4.png');
+            content: '';
             position: absolute;
-            bottom: -50%;
-            left: -60%;
-            z-index: 154;
+            bottom: -30px;
+            left: 0;
+            right: 0;
+            background: white;
+            height: 60px;
+            border-radius: 50%;
+            -webkit-box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.2) inset;
+            -moz-box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.2) inset;
+            box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.2) inset;
+            transform: rotate(360deg);
         }
 
         &-menu {
             &__logo {
                 margin-left: 45%;
             }
+
             &__nav {
                 width: 60%;
             }
@@ -136,6 +148,21 @@
         background-repeat: no-repeat, no-repeat;
         background-color: $grey;
         z-index: 2;
+
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: -110px;
+            left: 0;
+            right: 0;
+            background: white;
+            height: 200px;
+            border-radius: 50%;
+            -webkit-box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.2) inset;
+            -moz-box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.2) inset;
+            box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.2) inset;
+            transform: rotate(360deg);
+        }
 
         &-menu {
             display: flex;
@@ -223,5 +250,15 @@
             margin-right: 40px;
             font-feature-settings: 'tnum'on, 'lnum'on;
         }
+    }
+}
+
+@media (min-width: 1180px) {
+    .header {
+        background-image: url('../img/shadow-2.svg'), url('../img/shadow.svg');
+        background-position: 0,0,0,0,;
+        background-repeat: no-repeat, no-repeat;
+        background-color: $grey;
+        z-index: 2;
     }
 }
