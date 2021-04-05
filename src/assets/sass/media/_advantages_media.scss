@@ -11,7 +11,7 @@
 
       &__description {
         font-size: 11px;
-        min-width: 141px;
+        //min-width: 141px;
       }
     }
   }
@@ -21,7 +21,6 @@
 @media (min-width: 425px) {
   .advantages {
     &-item {
-      z-index: 4;
 
       &:nth-child(3) {
         padding-left: 30px;
@@ -33,7 +32,7 @@
 
       &__description {
         font-size: 13px;
-        min-width: 167px;
+        //min-width: 167px;
       }
     }
   }
@@ -41,11 +40,6 @@
 
 @media (min-width: 768px) {
   .advantages {
-    background-image: url('../img/hedgehog-1.png'), url('../img/hedgehog-4.png');
-    background-position: right top, left top 40%;
-    background-repeat: no-repeat, no-repeat;
-    background-size: 15%;
-    z-index: 180;
     &:after {
       content: '';
       position: absolute;
@@ -60,6 +54,16 @@
       box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.2) inset;
       transform: rotate(360deg);
     }
+
+    
+  &:before {
+    content: url('../img/hedgehog-1.png');
+    position: absolute;
+    top: -90px;
+    right: 0;
+    background-repeat:  no-repeat;
+    z-index: 4;
+  }
 
     &-items {
       display: flex;
@@ -98,8 +102,8 @@
       }
 
       &__description {
-        font-size: 14px;
-        text-align: center;
+        font-size: 12px;
+        line-height: 18px;
       }
     }
   }

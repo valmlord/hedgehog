@@ -59,8 +59,8 @@
         background-position: 0, 0, 0, 0;
         background-repeat: no-repeat, no-repeat;
         background-color: $grey;
-        z-index: 2;
         min-height: 566px;
+
         &-menu {
             &__logo {
                 margin-left: 42%;
@@ -105,35 +105,38 @@
     }
 }
 
-@media (min-width: 425px) {
+
+@media (min-width: 768px) {
     .header {
-        background-image: url('../img/shadow-2.svg'), url('../img/shadow.svg');
-        background-position: 0, 0, 0, 0;
-        background-repeat: no-repeat, no-repeat;
-        background-color: $grey;
-        z-index: 2;
-        min-height: 566px;
+        &:before {
+            content: url('../img/hedgehog-4.png');
+            position: absolute;
+            bottom: -50%;
+            left: -60%;
+            z-index: 154;
+        }
+
         &-menu {
             &__logo {
-                margin-left: 43%;
-
-                &-img {
-                    width: 96px;
-                    height: 66px;
-                }
+                margin-left: 45%;
+            }
+            &__nav {
+                width: 60%;
             }
         }
     }
 }
 
+
 @media (min-width: 1024px) {
     .header {
         height: 768px;
         background-image: url('../img/shadow-2.svg'), url('../img/shadow.svg');
-        background-size: cover; 
+        background-size: cover;
         background-repeat: no-repeat, no-repeat;
         background-color: $grey;
         z-index: 2;
+
         &-menu {
             display: flex;
             align-items: center;
@@ -189,9 +192,6 @@
                 border-radius: none;
                 z-index: 9;
 
-                &--active {
-                    left: 0;
-                }
 
                 &-phone {
                     display: none;
@@ -202,6 +202,7 @@
         &-promo {
             &__title {
                 margin-top: 100px;
+
                 &-transperent {
                     font-size: 28px;
                 }
@@ -214,7 +215,7 @@
         }
     }
 
-    
+
     .phone {
         &-text {
             color: $dark-grey;
