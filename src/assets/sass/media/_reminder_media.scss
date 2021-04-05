@@ -1,0 +1,22 @@
+@media (min-width: 375px) {
+    .reminder {
+        &-info {
+            .hedgehog {
+                width: 38px;
+                height: 34px;
+            }
+        }
+    
+        &-title {
+            font-size: 26px;
+        }
+    
+        &-count {
+            font-size: 26px;
+        }
+    
+        &-descr {
+            font-size: 16px;
+        }
+    }
+}

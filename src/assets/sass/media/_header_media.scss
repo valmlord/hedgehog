@@ -1,21 +1,37 @@
 @media (min-width: 375px) {
     .header {
+        &-menu {
+
+            &__list {
+    
+                &-item {
+                    font-size: 20px;
+                }
+            }
+
+            &__nav {
+                &-phone {
+                    font-size: 24px;
+                }
+            }
+        }
+    
         &-promo {
             &__title {
                 .name-icon {
                     width: 180px;
                     fill: $dark-grey;
                 }
-    
+
                 &-transperent {
                     font-family: "Cormorant Infant", serif;
                     font-size: 26px;
                 }
             }
+
             &__subtitle {
-                    font-size: 14px;
-                }
-            
+                font-size: 14px;
+            }
         }
     }
 }

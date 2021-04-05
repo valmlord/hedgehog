@@ -1,5 +1,19 @@
 @media (min-width: 375px) {
     .advantages {
-        
+      &-item {   
+        &:nth-child(3) {
+          padding-left: 30px;
+        }
+    
+        &__title {
+          font-size: 16px;
+        }
+    
+        &__description {
+          font-size: 11px;
+          min-width: 141px;
+        }
+      }
     }
+    
 }

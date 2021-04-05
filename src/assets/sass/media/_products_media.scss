@@ -1,0 +1,76 @@
+@media (min-width: 375px) {
+    .products {
+        padding-left: 0px;
+        &-card {
+    
+            &__header {
+                &-sale {
+                    .sale-icon {
+                        position: absolute;
+                        top: -8px;
+                        right: 57px;
+                        font-family: 'Raleway', sans-serif;
+                        font-size: 14px;
+                        font-feature-settings: 'tnum'on, 'lnum'on;
+                        background-color: $dirty-grey;
+                        font-weight: bold;
+                        padding: 6px 7px 8px 9px;
+                        color: white;
+                        z-index: 20;
+                    }
+                }
+                &-info {
+                    .info-item {
+                        font-size: 14px;
+                        font-feature-settings: 'tnum'on, 'lnum'on;
+                        top: 20px;
+                        right: 20px;
+
+                        .hearth {
+                            width: 15px;
+                            height: 15px;
+                            margin-right: 5px;
+                            margin-left: 20px;
+                        }
+    
+                        .syringe {
+                            width: 15px;
+                            height: 15px;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+
+            &__description {
+    
+                &-name {
+                    font-size: 32px;
+    
+                }
+    
+                &-text {
+                    font-size: 13px;
+    
+                }
+    
+                &-price {
+    
+                    .old-price {
+                        font-size: 22px;
+                    }
+                    
+                    .new-price {
+                        font-size: 42px;
+                    }
+                }
+            }
+        }
+    }
+
+    .slick-slide {
+        width: 330px;
+        padding-right: 40px;
+        position: relative;
+    }
+}

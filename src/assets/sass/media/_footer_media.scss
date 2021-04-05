@@ -1,0 +1,25 @@
+@media (min-width: 375px) {
+    .footer {  
+        &-menu {
+            &__list {
+    
+                &-item {
+                    font-size: 20px;
+                }
+            }
+        }
+    
+        &-phone {
+            font-size: 24px;
+        }
+    
+        &-copyright {
+            font-family: 'Raleway', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            color: #FFFFFF;
+            margin-top: 34px;
+        }
+    }
+}
