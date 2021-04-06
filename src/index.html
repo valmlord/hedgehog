@@ -33,16 +33,23 @@
       <nav class="header-menu__nav">
         <ul class="header-menu__list">
           <li class="header-menu__list-item">
-            <a class="header-menu__list-link submenu" href="javascript:void(0)">Каталог</a>
+            <svg class="drop-icon">
+              <use xlink:href="#drop-icon"></use>
+            </svg>
+            <a class="header-menu__list-link submenu" id="submenu" href="javascript:void(0)">Каталог</a>
             <ul class="submenu-list">
               <li class="submenu-list__item">
-                <a class="submenu-list__item-link" href="#">Ёжики</a></li>
+                <a class="submenu-list__item-link" href="#">Ёжики</a>
+              </li>
               <li class="submenu-list__item">
-                <a class="submenu-list__item-link" href="#">Питание</a></li>
+                <a class="submenu-list__item-link" href="#">Питание</a>
+              </li>
               <li class="submenu-list__item">
-                <a class="submenu-list__item-link" href="#">Переноски</a></li>
+                <a class="submenu-list__item-link" href="#">Переноски</a>
+              </li>
               <li class="submenu-list__item">
-                <a class="submenu-list__item-link" href="#">Лекарства</a></li>
+                <a class="submenu-list__item-link" href="#">Лекарства</a>
+              </li>
             </ul>
           </li>
           <li class="header-menu__list-item">
@@ -161,25 +168,51 @@
     <div class="products-cards">
 
       <div class="products-card products-card--first">
-        <div class="products-card__header">
-          <div class="products-card__header-sale">
-            <p class="sale-icon">-50%</p>
+        
+        <div class="tooltip">
+          <div class="tooltip-element">
+            <svg class="tooltip-element__icon">
+              <use xlink:href="#tooltip-icon"></use>
+            </svg>
           </div>
-          <div class="products-card__header-info">
-            <div class="info-item">
-              <svg class="syringe">
+          <div class="tooltip-info">
+            <div class="tooltip-info__item-icon">
+              <svg class="syringe-icon">
                 <use xlink:href="#syringe-icon"></use>
               </svg>
               <p>привит</p>
             </div>
-            <div class="info-item">
-              <svg class="hearth">
+            <div class="tooltip-info__item-icon">
+              <svg class="hearth-icon">
                 <use xlink:href="#hearth-icon"></use>
               </svg>
               <p>1230</p>
             </div>
           </div>
         </div>
+
+        <div class="products-card__header">
+
+          <div class="products-card__header-sale">
+            <p class="sale-icon">-50%</p>
+          </div>
+
+          <div class="products-card__header-info">
+            <div class="products-card__item-icon">
+              <svg class="syringe-icon">
+                <use xlink:href="#syringe-icon"></use>
+              </svg>
+              <p>привит</p>
+            </div>
+            <div class="products-card__item-icon">
+              <svg class="hearth-icon">
+                <use xlink:href="#hearth-icon"></use>
+              </svg>
+              <p>1230</p>
+            </div>
+          </div>
+        </div>
+
         <div class="products-card__description">
           <h4 class="products-card__description-name">
             Ёжик <br> “Евгений”
@@ -192,6 +225,7 @@
             <span class="new-price">1 500 ₽</span>
           </p>
         </div>
+
         <button class="btn btn-order">
           <svg class="plus">
             <use xlink:href="#plus-icon"></use>
@@ -199,11 +233,34 @@
         </button>
       </div>
 
+
       <div class="products-card products-card--second">
+        <div class="tooltip">
+          <div class="tooltip-element">
+            <svg class="tooltip-element__icon">
+              <use xlink:href="#tooltip-icon"></use>
+            </svg>
+          </div>
+          <div class="tooltip-info">
+            <div class="tooltip-info__item-icon">
+              <svg class="syringe-icon">
+                <use xlink:href="#syringe-icon"></use>
+              </svg>
+              <p>привит</p>
+            </div>
+            <div class="tooltip-info__item-icon">
+              <svg class="hearth-icon">
+                <use xlink:href="#hearth-icon"></use>
+              </svg>
+              <p>1230</p>
+            </div>
+          </div>
+        </div>
         <div class="products-card__header">
           <div class="products-card__header-sale">
             <p class="sale-icon">-50%</p>
           </div>
+
           <div class="products-card__header-info">
             <div class="info-item">
               <svg class="syringe">
@@ -218,31 +275,31 @@
               <p>1235</p>
             </div>
           </div>
+
+          <div class="products-card__description">
+            <h4 class="products-card__description-name">
+              Ёжик <br> “Максим”
+            </h4>
+            <p class="products-card__description-text">
+              Немного игривый и задорный характер этого друга никого не оставит равнодушным!
+            </p>
+            <p class="products-card__description-price">
+              <span class="old-price">5 000 ₽</span>
+              <span class="new-price">2 500 ₽</span>
+            </p>
+          </div>
+          <button class="btn btn-order">
+            <svg class="plus">
+              <use xlink:href="#plus-icon"></use>
+            </svg>
+          </button>
         </div>
-        <div class="products-card__description">
-          <h4 class="products-card__description-name">
-            Ёжик <br> “Максим”
-          </h4>
-          <p class="products-card__description-text">
-            Немного игривый и задорный характер этого друга никого не оставит равнодушным!
-          </p>
-          <p class="products-card__description-price">
-            <span class="old-price">5 000 ₽</span>
-            <span class="new-price">2 500 ₽</span>
-          </p>
-        </div>
-        <button class="btn btn-order">
-          <svg class="plus">
-            <use xlink:href="#plus-icon"></use>
-          </svg>
-        </button>
+
       </div>
 
-    </div>
-
-    <div class="products-cards__nav">
-      <!--  -->
-      <!-- <button class="prev-slide">
+      <div class="products-cards__nav">
+        <!--  -->
+        <!-- <button class="prev-slide">
           <svg class="prev">
             <use xlink:href="#prev"></use>
           </svg>
@@ -254,6 +311,7 @@
           </svg>
       </button> 
       <!--  -->
+      </div>
     </div>
   </div>
 </section>
@@ -596,6 +654,29 @@
       <path
         d="M10.8829 23.9338L23.6325 12.8076C23.7478 12.707 23.8404 12.5827 23.9038 12.443C23.9672 12.3033 24 12.1516 24 11.998C24 11.8445 23.9672 11.6927 23.9038 11.553C23.8404 11.4134 23.7478 11.289 23.6325 11.1884L10.8829 0.0655721C10.8445 0.031961 10.7973 0.0101675 10.7469 0.00278791C10.6965 -0.0045917 10.645 0.00275346 10.5987 0.0239484C10.5523 0.0451433 10.513 0.0792947 10.4854 0.122335C10.4578 0.165375 10.443 0.215489 10.443 0.266709L10.443 2.98206C10.443 3.13626 10.5096 3.28376 10.6263 3.38768L19.036 10.7258L0.266657 10.7258C0.119995 10.7258 -1.77801e-06 10.8465 -1.77625e-06 10.994L-1.75226e-06 13.0054C-1.7505e-06 13.1529 0.119995 13.2736 0.266657 13.2736L19.036 13.2736L10.6263 20.6117C10.5096 20.7123 10.443 20.8598 10.443 21.0173L10.443 23.7327C10.443 23.9606 10.7096 24.0847 10.8829 23.9338Z"
         fill="#70908B" />
+    </g>
+  </symbol>
+</svg>
+
+<svg display="none">
+  <symbol id="drop-icon" viewBox="0 0 7 10">
+    <g>
+      <path
+        d="M0.306646 9.11919C0.374049 9.15425 0.449726 9.17029 0.525556 9.16559C0.601385 9.16089 0.674504 9.13563 0.737063 9.09252L6.15373 5.34252C6.20908 5.30418 6.25431 5.25299 6.28555 5.19334C6.31679 5.13369 6.33311 5.06736 6.33311 5.00002C6.33311 4.93269 6.31679 4.86636 6.28555 4.80671C6.25431 4.74706 6.20908 4.69587 6.15373 4.65752L0.737063 0.907522C0.674552 0.864269 0.6014 0.838941 0.525527 0.83428C0.449654 0.829619 0.373952 0.845803 0.306617 0.88108C0.239282 0.916357 0.182881 0.969382 0.14352 1.03441C0.104159 1.09945 0.0833386 1.17401 0.083313 1.25002V8.75002C0.0833005 8.82608 0.104106 8.90069 0.143474 8.96577C0.182843 9.03084 0.239272 9.0839 0.306646 9.11919Z"
+        fill="#195557" />
+    </g>
+  </symbol>
+</svg>
+
+<svg display="none">
+  <symbol id="tooltip-icon" viewBox="0 0 37 37">
+    <g>
+      <path
+        d="M18.5 2.3125C9.56074 2.3125 2.3125 9.56074 2.3125 18.5C2.3125 27.4393 9.56074 34.6875 18.5 34.6875C27.4393 34.6875 34.6875 27.4393 34.6875 18.5C34.6875 9.56074 27.4393 2.3125 18.5 2.3125ZM18.5 31.9414C11.0783 31.9414 5.05859 25.9217 5.05859 18.5C5.05859 11.0783 11.0783 5.05859 18.5 5.05859C25.9217 5.05859 31.9414 11.0783 31.9414 18.5C31.9414 25.9217 25.9217 31.9414 18.5 31.9414Z"
+        fill="#195557" />
+      <path
+        d="M16.7656 12.1406C16.7656 12.6006 16.9484 13.0418 17.2736 13.367C17.5989 13.6923 18.04 13.875 18.5 13.875C18.96 13.875 19.4011 13.6923 19.7264 13.367C20.0516 13.0418 20.2344 12.6006 20.2344 12.1406C20.2344 11.6806 20.0516 11.2395 19.7264 10.9142C19.4011 10.589 18.96 10.4063 18.5 10.4062C18.04 10.4063 17.5989 10.589 17.2736 10.9142C16.9484 11.2395 16.7656 11.6806 16.7656 12.1406ZM19.3672 16.1875H17.6328C17.4738 16.1875 17.3438 16.3176 17.3438 16.4766V26.3047C17.3438 26.4637 17.4738 26.5938 17.6328 26.5938H19.3672C19.5262 26.5938 19.6562 26.4637 19.6562 26.3047V16.4766C19.6562 16.3176 19.5262 16.1875 19.3672 16.1875Z"
+        fill="#195557" />
     </g>
   </symbol>
 </svg>
