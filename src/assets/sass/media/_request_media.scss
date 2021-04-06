@@ -1,10 +1,12 @@
 @media (min-width: 375px) {
     .request {
         background-color: $grey;
+
         &-title {
             padding-top: 41px;
             font-size: 26px;
         }
+
         &-form {
             &__contact-details {
                 input {
@@ -13,7 +15,7 @@
             }
         }
 
-    
+
     }
 }
 
@@ -22,6 +24,7 @@
         &-title {
             font-size: 34px;
         }
+
         &-form {
             &__contact-details {
                 input {
@@ -29,26 +32,68 @@
                 }
             }
         }
-    
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .request {
+        background: white;
         &-form {
+            margin-top: 30px;
+            padding: 49px 30px 49px 30px;
+            background: #EAEEEF;
+            border-radius: 30px;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+            align-items: center;
+            max-height: 420px;
+
             &__for {
                 display: flex;
                 flex-direction: column;
+                &-item {
+                    margin-top: 0;
+                    margin-left: 14px;
+                }
+                &-select {
+                    background-color: white ;
+                    font-size: 14px;
+                    line-height: 30px;
+                }
             }
+
+            &__hedgehog-count {
+                margin-top: -10px;
+                margin-left: 40px;
+
+                p {
+                    padding: 5px 0;
+                }
+            }
+
             &__contact-details {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                max-height: 300px;
+
                 input {
+                    background-color: #F8F8F8;
+                    margin-top: 10px;
                     font-size: 18px;
+                    width: 32%;
+                    &:nth-child(4) {
+                        width: 100%;
+                    }
                 }
             }
         }
-    
+
     }
+}
+
+section.request .container form  div label{
+    margin-top: 0px;
 }

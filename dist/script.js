@@ -15518,7 +15518,6 @@ menuItem.forEach(function (item) {
     menu.classList.toggle("header-menu__nav--active");
   });
 });
-console.log(1);
 
 /***/ }),
 
@@ -15545,7 +15544,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.products-cards').slick({
   prevArrow: '<button type="button" class="prev-slide"><svg class="prev"><use xlink:href="#prev"></use></svg></button>',
   nextArrow: '<button type="button" class="next-slide"><svg class="next"><use xlink:href="#next"></use></svg></button>',
   responsive: [{
-    breakpoint: 1024,
+    breakpoint: 1180,
     settings: {
       arrows: false
     }

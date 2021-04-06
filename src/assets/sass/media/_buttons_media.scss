@@ -6,7 +6,7 @@
             width: 80%;
             margin-top: 41px;
             font-size: 16px;
-            line-height: 20px;
+            line-height: 60px;
         }
 
         &-order {
@@ -32,10 +32,21 @@
     }
 }
 
-@media (min-width: 425px) {
+@media (min-width: 768px) {
     .btn {
         &-promo {
             width: 328px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .btn {
+        &-submit {
+            width: 369px;
+            height: 69px;
+            margin: 30px auto;
+            z-index: 5;
         }
     }
 }

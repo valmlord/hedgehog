@@ -6,15 +6,15 @@
                 height: 34px;
             }
         }
-    
+
         &-title {
             font-size: 26px;
         }
-    
+
         &-count {
             font-size: 26px;
         }
-    
+
         &-descr {
             font-size: 16px;
         }
@@ -29,15 +29,15 @@
                 height: 44px;
             }
         }
-    
+
         &-title {
             font-size: 30px;
         }
-    
+
         &-count {
             font-size: 30px;
         }
-    
+
         &-descr {
             font-size: 20px;
         }
@@ -54,22 +54,23 @@
             align-items: center;
             justify-content: center;
             flex-wrap: wrap;
-        padding-top: 47px;
+            padding-top: 77px;
+
             .hedgehog {
                 width: 34px;
                 height: 30px;
                 margin-top: 0;
             }
         }
-    
+
         &-title {
             font-size: 24px;
         }
-    
+
         &-count {
             font-size: 24px;
         }
-    
+
         &-descr {
             font-size: 14px;
             flex-basis: 100%;
