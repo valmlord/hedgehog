@@ -139,61 +139,6 @@
     }
 }
 
-@media (min-width: 1024px) {
-    .products {
-        &-card {
-            &__header {
-                display: none;
-                &-info {
-                    display: none;
-                }
-            }
-        }
-    .products-card__header-info {
-        display: none;
-    }
-    }
-
-    .tooltip {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        cursor: pointer;
-
-        &-element {
-            display: flex;
-
-            &__icon {
-                width: 37px;
-                height: 37px;
-            }
-        }
-
-        &-info {
-            display: flex;
-            width: 87px;
-            height: 42px;
-
-            &__item {
-
-                &-icon {
-                    .hearth-icon {
-                        width: 19px;
-                        height: 19px;
-                    }
-
-                    .syringe-icon {
-                        width: 19px;
-                        height: 19px;
-                    }
-                }
-            }
-
-        }
-    }
-}
-
 @media (min-width: 1180px) {
     .products {
         &-card {
