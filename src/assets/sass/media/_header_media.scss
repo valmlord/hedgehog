@@ -180,7 +180,51 @@
                 padding: 0;
                 display: flex;
                 order: 1;
-                flex: 2;
+                flex: 2;  
+
+                .submenu {
+                    &-list {
+                        margin-top: 16px;
+                        display: flex;
+                        flex-direction: column;
+                        background-color: white;
+                        padding: 0px 48px 19px 24px;
+                        font-size: 16px;
+                        background: #FFFEFE;
+                        box-shadow: 4px 4px 20px #C2CCCA;
+                        border-radius: 8px;
+                        line-height: 19px;
+                        z-index: 9;
+                        &__item {
+                            padding-top: 19px ;
+                            &-link {
+                                font-family: "Cormorant Infant", serif;
+                                color: $dark-grey;
+                                &:after {
+                                    display: block;
+                                    position: absolute;
+                                    left: 0;
+                                    /*изменить на right:0;, чтобы изменить направление подчёркивания */
+                                    width: 0;
+                                    /*задаём длинну линии до наведения курсора*/
+                                    height: 2px;
+                                    /*задаём ширину линии*/
+                                    background-color: $dark-grey;
+                                    /*задаём цвет линии*/
+                                    content: "";
+                                    transition: width 0.3s ease-out;
+                                    /*задаём время анимации*/
+                                  }
+                              
+                                  &:hover:after,
+                                  &:focus:after {
+                                    width: 100%;
+                                    /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+                                  }
+                            }
+                        }
+                    }
+                }
 
                 &-link {
                     padding-right: 40px;
@@ -251,14 +295,43 @@
             font-feature-settings: 'tnum'on, 'lnum'on;
         }
     }
+
+    .header-menu__nav .submenu-list {
+        -ms-transform: scaleY(0);
+        transform: scaleY(0);
+      -webkit-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+        transform-origin: 0 0;
+    }
+
+    .header-menu__nav .header-menu__list .header-menu__list-item:hover .submenu-list  {
+        -webkit-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+        transform: scaleY(1);
+        transition: 0.6s all;
+    }
 }
 
 @media (min-width: 1180px) {
+
     .header {
-        background-image: url('../img/shadow-2.svg'), url('../img/shadow.svg');
-        background-position: 0,0,0,0,;
-        background-repeat: no-repeat, no-repeat;
-        background-color: $grey;
+        .container {
+            margin: 0 auto;
+            max-width: 1920px;
+            padding: 0 60px;
+        }
+
+        margin: 0 auto;
+        max-width: 1920px;
+        padding: 0 60px;
+        background-image: url('../img/shadow-2.svg'),
+        url('../img/shadow.svg');
+        background-position:top,
+        left,
+        bottom,
+        right;
+        background-repeat: no-repeat,
+        no-repeat;
         z-index: 2;
     }
 }
