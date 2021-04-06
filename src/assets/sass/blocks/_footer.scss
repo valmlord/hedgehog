@@ -1,6 +1,6 @@
 .footer {
     padding: 35px 0;
-    background-color: $dark-grey;
+    background-color: $dirty-grey;
 
     &-inner {
         display: flex;
@@ -36,7 +36,7 @@
 
             &-item {
                 font-family: 'Cormorant Infant', serif;
-                font-size: 18px;
+                font-size: 16px;
                 text-transform: uppercase;
                 font-weight: 700;
                 padding: 10px 0;
@@ -83,7 +83,7 @@
         font-family: 'Raleway', sans-serif;
         font-style: normal;
         font-weight: normal;
-        font-size: 11px;
+        font-size: 9px;
         color: #FFFFFF;
         margin-top: 34px;
     }

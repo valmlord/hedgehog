@@ -21,7 +21,7 @@
     }
 }
 
-@media (min-width: 375px) {
+@media (min-width: 425px) {
     .reminder {
         &-info {
             .hedgehog {
@@ -40,6 +40,41 @@
     
         &-descr {
             font-size: 20px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .reminder {
+        background: white;
+
+        &-info {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        padding-top: 47px;
+            .hedgehog {
+                width: 34px;
+                height: 30px;
+                margin-top: 0;
+            }
+        }
+    
+        &-title {
+            font-size: 24px;
+        }
+    
+        &-count {
+            font-size: 24px;
+        }
+    
+        &-descr {
+            font-size: 14px;
+            flex-basis: 100%;
+            display: flex;
+            justify-content: center;
         }
     }
 }

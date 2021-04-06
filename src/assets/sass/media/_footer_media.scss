@@ -1,18 +1,10 @@
 @media (min-width: 375px) {
-    .footer {  
-        &-menu {
-            &__list {
-    
-                &-item {
-                    font-size: 20px;
-                }
-            }
-        }
-    
+    .footer {
+
         &-phone {
             font-size: 24px;
         }
-    
+
         &-copyright {
             font-family: 'Raleway', sans-serif;
             font-style: normal;
@@ -20,6 +12,80 @@
             font-size: 13px;
             color: #FFFFFF;
             margin-top: 34px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer {
+    
+        &-inner {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        &-links {
+            display: flex;
+            flex-wrap: no-wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+        &-logo {
+            flex-basis: auto;
+        }
+    
+        &-menu {
+            display: flex;
+            flex-direction: row;
+    
+            &__nav {
+                display: flex;
+                margin-top: 0;
+                flex-basis: auto;
+            }
+    
+            &__list {
+                display: flex;
+                flex-direction: row;
+    
+                &-item {
+                    padding: 0px 10px;
+    
+                    &:last-child {
+                        margin-bottom: 0px;
+                    }
+                }
+    
+            }
+        }
+    
+    
+        &-social {
+            &__links {
+                display: flex;
+                flex-direction: row;
+                top: 10px;
+                flex-basis: auto;
+            }
+            &__link {
+                margin-right: 23px;
+            }
+    
+        }
+    }
+}
+
+@media (min-width: 1080px) {
+    .footer {
+        .container {
+            margin: 0 auto;
+            max-width: 1920px;
+            padding: 0 60px;    
+    }
+        &-logo {
+            flex-basis: 40%;
         }
     }
 }
