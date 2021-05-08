@@ -8,7 +8,7 @@ const imagemin = require("gulp-imagemin");
 const htmlmin = require("gulp-htmlmin");
 const webpack = require("webpack-stream");
 
-const dist = "./dist/"; // Тут адрес к вашему серверу
+const dist = "./dist/"; 
 
 gulp.task("server", function () {
   browserSync({
