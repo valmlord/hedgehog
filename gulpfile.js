@@ -8,7 +8,7 @@ const imagemin = require("gulp-imagemin");
 const htmlmin = require("gulp-htmlmin");
 const webpack = require("webpack-stream");
 
-const dist = "./dist/"; 
+const dist = "./dist/"; // Тут адрес к вашему серверу
 
 gulp.task("server", function () {
   browserSync({
@@ -17,7 +17,7 @@ gulp.task("server", function () {
     },
   });
 
-  gulp.watch("src/*.html").on("change", browserSync.reload);
+  gulp.watch("dist/*.html").on("change", browserSync.reload);
   gulp.watch("dist/*.js").on("change", browserSync.reload);
 });
 
@@ -69,12 +69,16 @@ gulp.task("icons", function () {
   return gulp.src("src/assets/icons/**/*").pipe(gulp.dest("dist/assets/icons"));
 });
 
-gulp.task("images", function () {
-  return gulp
-    .src("src/assets/img/**/*")
-    .pipe(imagemin())
-    .pipe(gulp.dest("dist/assets/img"));
+gulp.task("image", function () {
+  return gulp.src("src/assets/img/**/*").pipe(gulp.dest("dist/assets/img"));
 });
+
+// gulp.task("images", function () {
+//   return gulp
+//     .src("src/assets/img/**/*")
+//     //.pipe(imagemin())
+//     .pipe(gulp.dest("dist/assets/img"));
+// });
 
 gulp.task("build-js", () => {
   return gulp
@@ -124,8 +128,8 @@ gulp.task(
     "styles",
     "fonts",
     "icons",
+    "image",
     "html",
-    "images",
     "build-js"
   )
 );
